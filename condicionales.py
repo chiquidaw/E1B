@@ -32,7 +32,6 @@ puntuacion = float(input("Introduce tu puntuación (EJ: 0.0, 0.4, 0.6 o más): "
 nivel = ""
 dinero = 0.0
 
-# Determinamos el nivel y el dinero
 if puntuacion == 0.0:
     nivel = "Inaceptable"
     dinero = 2400 * puntuacion
@@ -46,9 +45,57 @@ else:
     nivel = "Puntuación no válida"
     dinero = 0.0
 
-# Mostramos el resultado
 print("Nivel de rendimiento: " + nivel)
 print("Cantidad de dinero: " + str(dinero) + "€")
 
 #Ejercicio 5
+print("Tipos de pizza disponibles:")
+print("1. Vegetariana")
+print("2. No vegetariana")
+
+opcion = input("¿Quieres una pizza vegetariana (1) o no vegetariana (2)? ")
+
+ingredientes_base = ["Mozzarella", "Tomate"]
+
+if opcion == "1":
+    print("\nHas elegido una pizza vegetariana.")
+    print("Ingredientes disponibles:")
+    print("1. Pimiento")
+    print("2. Tofu")
+    
+    ingrediente = input("Elige un ingrediente (1-2): ")
+    if ingrediente == "1":
+        ingrediente_elegido = "Pimiento"
+    elif ingrediente == "2":
+        ingrediente_elegido = "Tofu"
+    else:
+        print("Opción no válida. Se elegirá Pimiento por defecto.")
+        ingrediente_elegido = "Pimiento"
+    
+    ingredientes_base.append(ingrediente_elegido)
+    print("\nTu pizza es VEGETARIANA con los siguientes ingredientes:", ", ".join(ingredientes_base))
+
+elif opcion == "2":
+    print("\nHas elegido una pizza no vegetariana.")
+    print("Ingredientes disponibles:")
+    print("1. Peperoni")
+    print("2. Jamón")
+    print("3. Salmón")
+    
+    ingrediente = input("Elige un ingrediente (1-3): ")
+    if ingrediente == "1":
+        ingrediente_elegido = "Peperoni"
+    elif ingrediente == "2":
+        ingrediente_elegido = "Jamón"
+    elif ingrediente == "3":
+        ingrediente_elegido = "Salmón"
+    else:
+        print("Opción no válida. Se elegirá Peperoni por defecto.")
+        ingrediente_elegido = "Peperoni"
+    
+    ingredientes_base.append(ingrediente_elegido)
+    print("\nTu pizza es NO VEGETARIANA con los siguientes ingredientes:", ", ".join(ingredientes_base))
+
+else:
+    print("\nOpción incorrecta. Inténtalo de nuevo.")
 
