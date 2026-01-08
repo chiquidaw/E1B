@@ -14,14 +14,15 @@ class Cuenta:
 # Personal de un centro educativo
 class Profesor:
     centro = "I.E.S Las Galletas"
-    def __init__(self, nombre, asignatura):
-        print(f"\nCreando al profesor {nombre}, de la asignatura {asignatura}")
+    def __init__(self, dni, nombre, asignatura):
+        print(f"\nCreando al profesor {nombre} con DNI {dni}, de la asignatura {asignatura}")
 
+        self.dni = dni
         self.nombre = nombre
         self.asignatura = asignatura
 
     def __repr__(self):
-        return f"Profesor (Nombre = '{self.nombre}', Asignatura = {self.asignatura}, Centro = {self.centro})"
+        return f"Profesor (DNI = {self.dni}, Nombre = '{self.nombre}', Asignatura = {self.asignatura}, Centro = {self.centro})"
 
 # Pacientes de un veterinario
 class Ficha:
@@ -39,7 +40,7 @@ class Ficha:
 nueva_cuenta = Cuenta("Jose", 10)
 print(nueva_cuenta)
 
-nuevo_profesor = Profesor("Jose", "Informática")
+nuevo_profesor = Profesor("67487412P", "Jose", "Informática")
 print(nuevo_profesor)
 
 nueva_ficha = Ficha("Jose", "Max", "Golden Retriever")
