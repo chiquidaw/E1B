@@ -1,0 +1,34 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Laptop",
+            "precio": 400.0,
+            "cantidad": 0,
+            "precio_original": 400.0
+        },
+        {
+            "id": 2,
+            "nombre": "Mouse",
+            "precio": 25.0,
+            "cantidad": 50,
+            "precio_original": 25.0
+        },
+        {
+            "id": 3,
+            "nombre": "Teclado",
+            "precio": 30.0,
+            "cantidad": 30,
+            "precio_original": 30.0
+        },
+        {
+            "id": 4,
+            "nombre": "Alfombrillas",
+            "precio": 20.0,
+            "cantidad": 0,
+            "precio_original": 20.0
+        }
+    ],
+    "proximo_id": 6,
+    "dinero_vendido": 2000.0
+}
