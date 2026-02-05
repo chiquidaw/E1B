@@ -18,17 +18,17 @@
             "id": 3,
             "nombre": "Teclado",
             "precio": 30.0,
-            "cantidad": 30,
+            "cantidad": 20,
             "precio_original": 30.0
         },
         {
             "id": 4,
             "nombre": "Alfombrillas",
             "precio": 20.0,
-            "cantidad": 0,
+            "cantidad": 100,
             "precio_original": 20.0
         }
     ],
-    "proximo_id": 6,
-    "dinero_vendido": 2000.0
+    "proximo_id": 5,
+    "dinero_vendido": 2300.0
 }

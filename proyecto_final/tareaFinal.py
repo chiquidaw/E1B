@@ -354,7 +354,7 @@ class InterfazAlmacen:
         d = self.almacen.dinero_vendido
         self.label_valor_total.config(text=f"◈ Valor Total: ${v:,.2f}")
         self.label_cantidad_productos.config(text=f"◻ Total: {c}")
-        self.label_dinero_vendido.config(text=f"◉ Dinero Vendido: ${d:,.2f}")
+        self.label_dinero_vendido.config(text=f"◉ Dinero Ganado: ${d:,.2f}")
     
     def crear_producto(self):
         try:
